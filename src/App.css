@@ -1,0 +1,193 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.tab-manager {
+  display: flex;
+  
+  justify-content: center;
+  border-bottom: 1px solid #48484859;
+}
+.tab {
+  padding: 12px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 36px;
+  margin: 0 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: inset 0px 0px 0px #002b49;
+  transition: all 0.5s !important;
+  user-select: none;
+}
+.tab:hover {
+  box-shadow: inset 150px 0px 0px #002b49;
+  color: white;
+}
+
+.selected-tab {
+  background-color: #002b49;
+  color: white;
+}
+
+.tab-content {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-fill-left {
+  box-shadow: inset 0px 0px 0px rgb(97, 241, 241);
+  transition: all 0.5s !important;
+}
+
+.button-fill-left:hover {
+  box-shadow: inset 150px 0px 0px rgb(89, 241, 241);
+}
+
+.testP {
+  position: relative;
+  height: 100vh;
+}
+.testC {
+  position: absolute;
+  width: 60%;
+  height: 90vh;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -2;
+}
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  top: -10vh;
+  right: -30%;
+  background-color: lightcyan;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.bottomNav {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(44, 42, 42);
+  width: 100%;
+  height: 120px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.plusBtnDiv {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: white;
+  margin-bottom: 120px;
+}
+.plusBtn {
+  font-weight: 900;
+  font-size: 70px;
+  color: black;
+  align-self: center;
+  margin-bottom: 100px;
+  margin: auto;
+  z-index: 2;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
+/********************/
+
+/* EXPANDABLE LIST  */
+
+/********************/
+#listContainer {
+  margin-top: 15px;
+}
+#expList ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+#expList p {
+  margin: 0;
+  display: block;
+}
+#expList p:hover {
+  background-color: #121212;
+}
+#expList li {
+  line-height: 140%;
+  text-indent: 0px;
+  background-position: 1px 8px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+/* Collapsed state for list element */
+
+/* Expanded state for list element
+/* NOTE: This class must be located UNDER the collapsed one */
+
+.listImg:hover {
+  z-index: 9999;
+  border: 5px solid red;
+}
+
+.parentFlower:hover {
+  transform: rotate(360deg);
+  transition: transform 2s;
+  animation-iteration-count: infinite;
+}
+
+.select-editable {
+  position: relative;
+  background-color: white;
+  border:1px solid grey ;
+  width: 120px;
+  height: 18px;
+  margin: 40px;
+}
+.select-editable select {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 14px;
+  border: none;
+  width: 116px;
+  margin: 0;
+  height: 15px;
+}
+.select-editable input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  padding: 1px;
+  font-size: 12px;
+  border: none;
+  height: 15px;
+
+}
+.select-editable select:focus,
+.select-editable input:focus {
+  outline: none;
+}

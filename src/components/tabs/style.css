@@ -1,0 +1,51 @@
+.contain {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+.inner {
+  background-color: turquoise;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  background-color: #00b6ff;
+  clip-path: circle(100%);
+}
+.inner:hover span {
+  color: #00b6ff;
+}
+.inner span {
+  float: right;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  transition: color 0.5s;
+  margin-right: 6%;
+  margin-top: 2%;
+}
+
+/*====================== circle icon====================*/
+.circle_icon {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
+}
+
+.active_li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
